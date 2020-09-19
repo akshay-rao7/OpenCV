@@ -1,2 +1,3 @@
-display image
-display video
+display_image
+display_video
+display_webcam

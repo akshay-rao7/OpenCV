@@ -1,1 +1,5 @@
 convert image into grayscale
+blur the image
+detect the edges
+dialate the image
+erode the image

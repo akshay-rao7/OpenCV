@@ -1,7 +1,8 @@
 import cv2
-print("package imported")
 
-img = cv2.imread("img1.jpg")
+path = 'D:\Workspace\code_space\OpenCV_tutorial\img1.jpg'
 
-cv2.imshow("Output",img)
+image = cv2.imread(path) #reading the image
+
+cv2.imshow("surprise",image)
 cv2.waitKey(0)

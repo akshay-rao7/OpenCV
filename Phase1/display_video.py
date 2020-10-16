@@ -1,9 +1,11 @@
-import cv2
+import cv2 #importing package
 
-cap = cv2.VideoCapture("vid1.mp4")
+path = "D:\Workspace\code_space\OpenCV_tutorial\intro.mp4"
+
+capture = cv2.VideoCapture(path)
 
 while True:
-    success, img = cap.read()
+    display , img = capture.read()
     cv2.imshow("Video",img)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(30) & 0xFF == ord ('s'):
         break

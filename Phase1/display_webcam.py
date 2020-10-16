@@ -1,13 +1,19 @@
-import cv2
+import cv2 #importing package
 
-cap = cv2.VideoCapture(1)
-#size
+camera_no = 1
+
+cap = cv2.VideoCapture(camera_no)
+
 cap.set(3,640)
-cap.set(4,480)
-cap.set(10,100)#brightness
+cap.set(4,280)
+cap.set(10,100)
 
 while True:
-    success, img = cap.read()
-    cv2.imshow("Video",img)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    display, img = cap.read()
+    cv2.imshow("Webcam_capture",img)
+    if cv2.waitKey(1) & 0xFF == ord ('s'):
         break
+
+
+
+

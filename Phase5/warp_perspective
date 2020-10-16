@@ -1,0 +1,28 @@
+import cv2
+import numpy as np
+print("package imported")
+
+img = cv2.imread("cards2.jpg")
+
+width,height=250,350
+
+
+pts1 = np.float32([[57,111],[146,96],[79,246],[182,225]])
+pts2 = np.float32([[0,0],[width,0],[0,height],[width,height]])
+matrix = cv2.getPerspectiveTransform(pts1,pts2)
+imageOutput = cv2.warpPerspective(img,matrix,(width,height))
+
+# cards2
+# 57,111
+# 146,96
+# 182,225
+# 79,246
+#
+# cards1
+# 224,169
+# 288,60
+# 214,15
+# 148,128
+
+cv2.imshow("Image",imageOutput)
+cv2.waitKey(0)

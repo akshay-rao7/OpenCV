@@ -1,10 +1,10 @@
-import cv2
-import numpy as np
+import cv2 #importing package
+import numpy as np #importing package
 print("package imported")
 
-img = cv2.imread("cards2.jpg")
+img = cv2.imread("cards2.jpg") #read the image file
 
-width,height=250,350
+width,height=250,350 #setting the width and the height parameter
 
 
 pts1 = np.float32([[57,111],[146,96],[79,246],[182,225]])

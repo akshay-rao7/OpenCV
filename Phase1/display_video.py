@@ -2,7 +2,7 @@ import cv2 #importing opencv package
 
 path = "D:\Workspace\code_space\OpenCV_tutorial\intro.mp4"  #mention the path from where the video(mp4 file) will be read
 
-capture = cv2.VideoCapture(path) #reading the video
+capture = cv2.VideoCapture(path) #reading the video file metioned in the path
 
 while True: #loop
     display , img = capture.read()

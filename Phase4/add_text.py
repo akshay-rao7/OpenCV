@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-import cv2
-import numpy as np
+import cv2  #importing the libraries
+import numpy as np #importing the libraries
 
 img = np.zeros((512,512,3),np.uint8)
 
